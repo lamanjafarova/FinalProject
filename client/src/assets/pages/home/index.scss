@@ -1,0 +1,169 @@
+#home{
+    .home-page{
+        background-color: #121214;
+        .container{
+            .slider-img-text{
+                display: flex;
+                .slider-text{
+                    width: 35%;
+                    padding: 130px 15px;
+                    .h1-slider{
+                        font-size: 60px;
+                        color: #fff;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                    }
+                    .h3-slider{
+                        font-size: 30px;
+                        color: #fff;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 400;
+                        margin-bottom: 35px;
+                        .span-slider{
+                            color: #00e5b0;
+                        }
+                    }
+                    .btn-slider-1{
+                        width: 200px;
+                        height: 60px;
+                        background-color: #f9bc35;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        color: #fff;
+                        border: none;
+                        font-size: 16px;
+                        border-radius: 5px;
+                        transition: all 0.5s;
+                        margin-right: 15px;
+                        &:hover{
+                            background-color: #00e5b0;
+                            cursor: pointer;
+                        }
+                    }
+                    .btn-slider-2{
+                        font-size: 16px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        color: #fff;
+                        border: none;
+                        border-bottom: 2px solid #121214;
+                        background-color: transparent;
+                        transition: all 0.5s;
+                        &:hover{
+                            border-bottom: 2px solid #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .slider-img{
+                    width: 65%;
+                }
+            }
+            .slider-img-text-2{
+                display: flex;
+                .slider-img-2{
+                    width: 60%;
+                }
+                .slider-text-2{
+                    width: 40%;
+                    padding: 150px 25px;
+                    .slider-h1-2{
+                        color: #fff;
+                        font-size: 60px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                    }
+                    .btn-slider-start{
+                        background-color: #159ce4;
+                        width: 220px;
+                        height: 60px;
+                        font-size: 16px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        color: #fff;
+                        border: none;
+                        transition: all 0.5s;
+                        margin-right: 15px;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: #00e5b0;
+                            cursor: pointer;
+                        }
+                    }
+                    .btn-slider-detail{
+                        font-size: 16px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        color: #fff;
+                        border: none;
+                        border-bottom: 2px solid #121214;
+                        background-color: transparent;
+                        transition: all 0.5s;
+                        &:hover{
+                            border-bottom: 2px solid #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .slider-img-text-3{
+                display: flex;
+                .slider-text-3{
+                    width: 45%;
+                    padding: 130px 15px;
+                    .h1-slider{
+                        font-size: 60px;
+                        color: #fff;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                    }
+                    .h3-slider-3{
+                        color: #fff;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 25px;
+                        margin-bottom: 25px;
+                    }
+                    .btn-slider-list{
+                        width: 200px;
+                        height: 60px;
+                        background-color: #fd4e26;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        color: #fff;
+                        border: none;
+                        font-size: 16px;
+                        border-radius: 5px;
+                        transition: all 0.5s;
+                        margin-right: 15px;
+                        &:hover{
+                            background-color: #00e5b0;
+                            cursor: pointer;
+                        }
+                    }
+                    .btn-slider-how{
+                        font-size: 16px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        color: #fff;
+                        border: none;
+                        border-bottom: 2px solid #121214;
+                        background-color: transparent;
+                        transition: all 0.5s;
+                        &:hover{
+                            border-bottom: 2px solid #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .slider-img-3{
+                    width: 55%;
+                }
+            }
+        }
+    }
+}

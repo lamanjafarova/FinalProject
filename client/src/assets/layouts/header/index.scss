@@ -1,6 +1,7 @@
 #header{
     .main-header{
         background-color: #121214;
+        padding: 30px 0;
         .container{
             .header-in-container{
                 display: flex;
@@ -30,6 +31,38 @@
                             }
                         }
                     }
+                    .burger{
+                        display: none;
+                    }
+                    @media only screen and (max-width: 992px){
+                        position: relative;
+                        .list{
+                            display: none;
+                            
+                        }
+                        .burger{
+                            display: block;
+                            position: absolute;
+                            z-index: 20;
+                            top: 50%;
+                            font-size: 2rem;
+                            right: 10%;
+                        }
+                        .mobile{
+                            display: block;
+                            position: absolute;
+                            background-color: #121214;
+                            width: 100%;
+                            top: 100%;
+                            padding: 20px;
+                            z-index: 12;
+                            left:0%;
+                            padding: 20px;
+                            li{
+                                padding: 10px 0;
+                            }
+                        }
+                    }
                 }
                 .sign-log-in-btn{
                     display: flex;
@@ -55,10 +88,29 @@
                         font-family: 'IBM Plex Sans', sans-serif;
                         font-size: 16px;
                         transition: all 0.5s;
+                        border-radius: 3px;
                         &:hover{
                             cursor: pointer;
                             color: #fff;
                             background-color: transparent;
+                        }
+                    }
+                }
+                .select-language{
+                    .lng-slct{
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid #121214;
+                        color: #fff;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        cursor: pointer;
+                        font-size: 16px;
+                        &:hover{
+                            border-bottom: 1px solid #fff;
+                        }
+                        .option{
+                            color: #121214;
+                            font-family: 'IBM Plex Sans', sans-serif;
                         }
                     }
                 }
