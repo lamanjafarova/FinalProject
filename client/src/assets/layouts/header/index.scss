@@ -1,0 +1,68 @@
+#header{
+    .main-header{
+        background-color: #121214;
+        .container{
+            .header-in-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .logo{
+                    width: 120px;
+                    height: 40px;
+                    .logo-img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                nav{
+                    ul{
+                        display: flex;
+                        column-gap: 30px;
+                        li{
+                            list-style: none;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            a{
+                                color: #fff;
+                                text-decoration: none;
+                                &:hover{
+                                    border-bottom: 2px solid #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .sign-log-in-btn{
+                    display: flex;
+                    column-gap: 25px;
+                    .sign-up{
+                        border: 2px solid #121214;
+                        background-color: #121214;
+                        color: #fff;
+                        transition: all 0.5s;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-size: 16px;
+                        &:hover{
+                            border-bottom: 2px solid #fff;
+                            cursor: pointer;
+                        }
+                    }
+                    .log-in{
+                        border: none;
+                        background-color: #00e5b0;
+                        width: 85px;
+                        height: 35px;
+                        color: #121214;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-size: 16px;
+                        transition: all 0.5s;
+                        &:hover{
+                            cursor: pointer;
+                            color: #fff;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
