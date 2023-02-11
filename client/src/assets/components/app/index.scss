@@ -1,0 +1,73 @@
+.app{
+    background-color: #121214;
+    .container{
+        .app-text-img{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 150px;
+            .app-text{
+                .app-h1{
+                    color: #fff;
+                    font-size: 36px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 700;
+                    border-top: 11px solid #00e5b0;
+                }
+                .app-h4{
+                    color: #fff;
+                    font-size: 20px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 400;
+                }
+                .store-google-app{
+                    display: flex;
+                    column-gap: 25px;
+                    .app-store{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        column-gap: 20px;
+                        font-size: 20px;
+                        border: 2px solid #fff;
+                        border-radius: 3px;
+                        width: 160px;
+                        height: 55px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        transition: all 0.4s;
+                        &:hover{
+                            color: #00e5b0;
+                            cursor: pointer;
+                            border: 2px solid #00e5b0;
+                        }
+                        i{
+                            font-size: 25px;
+                        }
+                    }
+                    .google-play{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        column-gap: 20px;
+                        font-size: 20px;
+                        border: 2px solid #fff;
+                        border-radius: 3px;
+                        width: 160px;
+                        height: 55px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        transition: all 0.4s;
+                        &:hover{
+                            color: #00e5b0;
+                            cursor: pointer;
+                            border: 2px solid #00e5b0;
+                        }
+                        i{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

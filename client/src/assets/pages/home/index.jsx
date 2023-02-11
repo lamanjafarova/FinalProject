@@ -7,6 +7,7 @@ import Team_03 from "../../images/03_team.svg";
 import Team_04 from "../../images/04_team.svg";
 import "./index.scss"
 import { RxCaretRight } from "react-icons/rx";
+import AppPuzzler from '../../components/app';
 const HomePage = () => {
   const settings = {
     dots: false,
@@ -54,6 +55,46 @@ const HomePage = () => {
           </div>
           </Slider>
         </div>
+      </div>
+      <div className="container">
+      <div className="search-job">
+          <div className="find-job">
+              <h1 className='find-h1'>FIND A JOB</h1>
+          </div>
+          <div className="input-search">
+              <input type="text" placeholder='Keywords' className='keywords-input'/>
+              <select name="" id="" className='specialisms'>
+              <option className='search-option' value="All Specialisms">All Specialisms</option>
+              <option className='search-option' value="Freelance">Freelance</option>
+              <option className='search-option' value="Full Time">Full Time</option>
+              <option className='search-option' value="Intership">Intership</option>
+              <option className='search-option' value="Part Time">Part Time</option>
+              <option className='search-option' value="Temporary">Temporary</option>
+              </select>
+              <select name="" id="" className='specialisms'>
+              <option className='search-option' value="All Locations">All Locations</option>
+              <option className='search-option' value="Freelance">Freelance</option>
+              <option className='search-option' value="Full Time">Full Time</option>
+              <option className='search-option' value="Intership">Intership</option>
+              <option className='search-option' value="Part Time">Part Time</option>
+              <option className='search-option' value="Temporary">Temporary</option>
+              </select>
+              <button className='search-btn'>Search</button>
+          </div>
+      </div>
+      <div className="specialisms-jobs">
+        <div className="text-specialisms">
+          <div className="h1-div">
+          <h1 className='text-h1-specialisms'>Brows Jobs by <br /> Specialism</h1>
+          </div>
+          <div className="p-div">
+          <p className='p-text-specialisms'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div className="app-puzzler">
+        <AppPuzzler />
       </div>
       
 

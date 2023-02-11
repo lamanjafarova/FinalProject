@@ -166,4 +166,110 @@
             }
         }
     }
+    .container{
+      .search-job{
+        margin-top: 30px;
+        .find-job{
+            width: 200px;
+            height: 60px;
+            border: 2px solid #121214;
+            border-radius: 3px;
+            background-color: #121214;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 40px;
+            box-shadow: rgba(249, 249, 254, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+            .find-h1{
+                font-size: 16px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+        .input-search{
+            margin-bottom: 160px;
+            .keywords-input{
+                width: 350px;
+                height: 60px;
+                background-color: #d6dce5;
+                border: none;
+                font-size: 16px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                padding-left: 20px;
+                border-radius: 5px;
+                margin-right: 65px;
+                &:focus{
+                    background-color: #fff;
+                    border: 1px solid #fff;
+                    box-shadow: rgba(0, 0, 0, 0.01) 0px 54px 55px, rgba(0, 0, 0, 0.22) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                }
+            }
+            .specialisms{
+                width: 300px;
+                height: 60px;
+                background-color: #d6dce5;
+                border: none;
+                font-size: 16px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                padding-left: 20px;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: all 0.4s;
+                &:hover{
+                    background-color: #fff;
+                    box-shadow: rgba(0, 0, 0, 0.01) 0px 54px 55px, rgba(0, 0, 0, 0.22) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                }
+                .search-option{
+                    background-color: #fff;
+                    cursor: pointer;
+                }
+            }
+            .search-btn{
+                width: 150px;
+                height: 60px;
+                font-size: 16px;
+                color: #fff;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 700;
+                background-color: #121214;
+                border: 3px solid #121214;
+                transition: all 0.5s;
+                border-radius: 3px;
+                &:hover{
+                    border: 3px solid #121214;
+                    background-color: #fff;
+                    color: #121214;
+                    cursor: pointer;
+                }
+            }
+        }
+      }
+      .specialisms-jobs{
+        margin: 60px 0;
+        .text-specialisms{
+            display: flex;
+            justify-content: space-between;
+            .h1-div{
+                width: 35%;
+                .text-h1-specialisms{
+                    font-size: 36px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    border-top: 11px solid #00e5b0;
+                    padding-top: 30px;
+                    margin-right: 30px;
+                }
+            }
+            .p-div{
+                width: 65%;
+                .p-text-specialisms{
+                    font-size: 20px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    line-height: 30px;
+                }
+            }
+        }
+      }
+    }
 }

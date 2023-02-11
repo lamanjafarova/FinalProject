@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import Logo from "../../images/01_logo_white.svg"
 import { Menu, Dropdown } from 'antd';
 import { VscChevronDown } from "react-icons/vsc";
-// import { Spin as Hamburger } from 'hamburger-react'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import "./index.scss"
 const Header = () => {
