@@ -1,0 +1,89 @@
+.card-candidate{
+    .container{
+        .candidate-text{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 45px;
+            margin: 70px 0;
+            .h1-card-candidate{
+                width: 35%;
+                .candidate-h1{
+                    font-size: 36px;
+                    color: #121214;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 700;
+                    border-top: 11px solid #00e5b0;
+                    padding-top: 30px;
+                }
+            }
+            .p-card-candidate{
+                width: 65%;
+                margin-top: 50px;
+                .p-candidate{
+                    font-size: 20px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 400;
+                    line-height: 25px;
+                }
+            }
+        }
+        .cards{
+            .card{
+                width: 360px;
+                height: 360px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transition: all 0.4s;
+                margin: 30px 0;
+                .quote-and-p{
+                    padding: 40px 35px;
+                    border-bottom: 1px solid #d6dce5;
+                    .icon{
+                        font-size: 40px;
+                        color: #d6dce5;
+                        transition: all 0.4s;
+                    }
+                    .card-p{
+                        font-size: 18px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 400;
+                        font-style: italic;
+                        margin-top: 15px;
+                    }
+                }
+                .author{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 20px;
+                    padding: 10px 35px;
+                    .author-img{
+                        margin: 10px;
+                        .image-author{
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .author-text{
+                        .card-h6{
+                            font-size: 16px;
+                            color: #121214;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            font-weight: 700;
+                        }
+                        .card-p-2{
+                            font-size: 14px;
+                            color: #898e9a;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                        }
+                    }
+                }
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.01) 0px 54px 55px, rgba(0, 0, 0, 0.22) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                    .icon{
+                        color: #00e5b0;
+                    }
+                }
+            }
+        }
+    }
+}

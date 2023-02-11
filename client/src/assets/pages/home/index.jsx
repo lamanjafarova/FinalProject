@@ -8,6 +8,8 @@ import Team_04 from "../../images/04_team.svg";
 import "./index.scss"
 import { RxCaretRight } from "react-icons/rx";
 import AppPuzzler from '../../components/app';
+import CardCandidate from '../../components/card-candidate';
+import GetStarted from '../../components/get-started';
 const HomePage = () => {
   const settings = {
     dots: false,
@@ -95,6 +97,12 @@ const HomePage = () => {
       </div>
       <div className="app-puzzler">
         <AppPuzzler />
+      </div>
+      <div className="card-candidates">
+        <CardCandidate />
+      </div>
+      <div className="get-started">
+        <GetStarted />
       </div>
       
 

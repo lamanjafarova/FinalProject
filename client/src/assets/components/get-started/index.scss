@@ -1,0 +1,59 @@
+.get-started-page{
+    background-color: #00e5b0;
+    .container{
+        .get-started-text{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 115px 0;
+            .started-h1{
+                font-size: 36px;
+                color: #121214;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 700;
+                border-top: 11px solid #121214;
+                padding-top: 25px;
+            }
+            .started-p{
+                font-size: 20px;
+                color: #121214;
+                font-family: 'IBM Plex Sans', sans-serif;
+                width: 45%;
+            }
+            .btn-sign-up{
+                width: 200px;
+                height: 60px;
+                font-size: 16px;
+                color: #fff;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 700;
+                background-color: #121214;
+                border: 3px solid #121214;
+                transition: all 0.5s;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 15px;
+                &:hover{
+                    border: 3px solid #121214;
+                    background-color: #fff;
+                    color: #121214;
+                    cursor: pointer;
+                }
+            }
+            .register{
+                .register-h2{
+                    font-size: 36px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 700;
+                    color: #121214;
+                }
+                .first-name{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
