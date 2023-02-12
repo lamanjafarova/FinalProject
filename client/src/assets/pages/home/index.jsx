@@ -5,11 +5,12 @@ import Slider from "react-slick";
 import Team_01 from "../../images/01_team.svg";
 import Team_03 from "../../images/03_team.svg";
 import Team_04 from "../../images/04_team.svg";
-import "./index.scss"
 import { RxCaretRight } from "react-icons/rx";
 import AppPuzzler from '../../components/app';
 import CardCandidate from '../../components/card-candidate';
 import GetStarted from '../../components/get-started';
+import BlogNews from '../../components/blog-news';
+import "./index.scss"
 const HomePage = () => {
   const settings = {
     dots: false,
@@ -103,6 +104,9 @@ const HomePage = () => {
       </div>
       <div className="get-started">
         <GetStarted />
+      </div>
+      <div className="blog-news">
+        <BlogNews />
       </div>
       
 

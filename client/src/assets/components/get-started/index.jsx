@@ -25,20 +25,20 @@ const GetStarted = () => {
         <div className="register">
             <h2 className='register-h2'>Register</h2>
             <div className="first-name">
-            <label htmlFor="firstName">First Name *</label>
-            <input type="text" />
+            <label htmlFor="firstName" className='first'>First Name *</label>
+            <input type="text" className='input'/>
             </div>
            <div className="last-name">
-           <label htmlFor="lastName">Last Name *</label>
-            <input type="text" />
+           <label htmlFor="lastName" className='last'>Last Name *</label>
+            <input type="text" className='input'/>
            </div>
            <div className="password">
-           <label htmlFor="password">Password *</label>
-            <input type="text" />
+           <label htmlFor="password" className='pswrd'>Password *</label>
+            <input type="text" className='input'/>
            </div>
            <div className="btn-group">
-                <button>Create an Account</button>
-                <button>Log In</button>
+                <button className='create-btn'>Create an Account</button>
+                <button className='log-btn'>Log In</button>
            </div>
         </div>
       </Modal>

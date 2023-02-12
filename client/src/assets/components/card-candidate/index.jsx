@@ -26,7 +26,6 @@ const CardCandidate = () => {
                 <div className="p-card-candidate">
                 <p className='p-candidate'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-
             </div>
             <div className="cards">
             <Slider {...settings}>
