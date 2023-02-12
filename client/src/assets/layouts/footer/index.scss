@@ -1,0 +1,162 @@
+.footer-section{
+    background-color: #121214;
+    .container{
+        .top-footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 130px 0;
+            border-bottom: 1px solid #c0c8d3;
+            .side-one{
+                .footer-logo{
+                    width: 120px;
+                    height: 30px;
+                    margin-bottom: 40px;
+                }
+                .footer-p{
+                    color: #c0c8d3;
+                    font-size: 16px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    margin-bottom: 40px;
+                }
+                .pad{
+                    margin-bottom: 20px;
+                    .pad-icon{
+                        color: #00e5b0;
+                        margin-right: 10px;
+                    }
+                    .pad-main-span{
+                        font-size: 14px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        color: #c0c8d3;
+                        &:hover{
+                            border-bottom: 1px solid #fff;
+                            cursor: pointer;
+                        }
+                    }
+                    .pad-span{
+                        color: #fff;
+                        font-size: 14px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                    }
+                }
+                .email-icon{
+                    color: #00e5b0;
+                    margin-right: 10px;
+                }
+                .email-span{
+                    font-size: 14px;
+                    color: #fff;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    &:hover{
+                        border-bottom: 1px solid #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .candidates-ul{
+                font-size: 18px;
+                color: #00e5b0;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 700;
+                list-style: none;
+                li{
+                    font-size: 16px;
+                    color: #fff;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 400;
+                    padding: 10px 0;
+                }
+            }
+            .employers-ul{
+                font-size: 18px;
+                color: #00e5b0;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 700;
+                list-style: none;
+                li{
+                    font-size: 16px;
+                    color: #fff;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 400;
+                    padding: 10px 0;
+                }
+            }
+            .right-side{
+                .right-h3{
+                    font-size: 18px;
+                    color: #00e5b0;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+                .right-p{
+                    font-size: 16px;
+                    color: #c0c8d3;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                }
+                .input{
+                    border-bottom: 4px solid #fff;
+                    margin-bottom: 40px;
+                    .right-input{
+                        border: none;
+                        background-color: transparent;
+                        width: 360px;
+                        height: 60px;
+                        font-size: 16px;
+                        color: #fff;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    .icon-email{
+                       font-size: 25px;
+                       color: #fff;
+                    }
+                }
+                .social-icons{
+                    display: flex;
+                    gap: 30px;
+                    font-size: 16px;
+                    color: #c0c8d3;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    &:hover{
+                        color: #00e5b0;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .bottom-footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 0;
+            .bottom-ul{
+                display: flex;
+                column-gap: 30px;
+                list-style: none;
+                li{
+                    a{
+                        color: #fff;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 400;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                            color: #00e5b0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .bottom-p{
+                color: #c0c8d3;
+                font-size: 14px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
+}

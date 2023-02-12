@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Footer from './assets/layouts/footer'
 import Header from './assets/layouts/header'
 import Candidates from './assets/pages/candidates'
 import Employers from './assets/pages/employers'
@@ -18,6 +19,7 @@ function App() {
         <Route path='/candidates' element={<Candidates />} />
         <Route path='/news-page' element={<NewsPage />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

@@ -12,9 +12,11 @@
     "antd": "^5.2.0",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
+    "react-back-to-top-button": "^0.0.14",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.0",
+    "react-scroll-to-top": "^3.0.0",
     "react-slick": "^0.29.0",
     "sass": "^1.58.0",
     "slick-carousel": "^1.8.1"
