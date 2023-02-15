@@ -7,6 +7,14 @@ import Icon2 from "../../images/02_how_it_works.svg"
 import { Button, Modal } from 'antd';
 import { useState } from 'react';
 import { RiArrowDropRightLine } from "react-icons/ri";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from '@chakra-ui/react'
 import "./index.scss"
 
 const HowItWorks = () => {
@@ -114,6 +122,70 @@ const HowItWorks = () => {
      </div>
      <div className="puzzler-app">
      <AppPuzzler />
+     </div>
+     <div className="accordion">
+          <div className="container">
+           <div className="h1-div">
+           <h1 className='accardion-h1'>
+            Frequently asked <br /> questions
+            </h1>
+           </div>
+  <Accordion>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left' fontSize='30px' fontFamily='IBM Plex Sans, sans-serif' className='accardion-h2'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing?
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4} fontSize='16px' fontFamily='IBM Plex Sans, sans-serif'>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left' fontSize='30px' fontFamily='IBM Plex Sans, sans-serif' className='accardion-h2'>
+        Ut enim ad minim veniam?
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4} fontSize='16px' fontFamily='IBM Plex Sans, sans-serif'>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left' fontSize='30px' fontFamily='IBM Plex Sans, sans-serif' className='accardion-h2'>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum?
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4} fontSize='16px' fontFamily='IBM Plex Sans, sans-serif'>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left' fontSize='30px' fontFamily='IBM Plex Sans, sans-serif' className='accardion-h2'>
+        Excepteur sint occaecat cupidatat non proident?
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4} fontSize='16px' fontFamily='IBM Plex Sans, sans-serif'>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
+          </div>
      </div>
      <div className="candidate-card">
       <CardCandidate />
