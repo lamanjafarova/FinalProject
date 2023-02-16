@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import Logo from "../../images/01_logo_white.svg"
 import { Menu, Dropdown } from 'antd';
 import {RxHamburgerMenu} from 'react-icons/rx';
-import ScrollToTop from "react-scroll-to-top";
+// import ScrollToTop from "react-scroll-to-top";
 import "./index.scss"
 const Header = () => {
   const [toggle, setToggle] = useState(true)
@@ -88,7 +88,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <ScrollToTop smooth />
+      {/* <ScrollToTop smooth /> */}
 
 
 

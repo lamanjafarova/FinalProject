@@ -38,11 +38,13 @@
         }
     }
     .all-articles{
+        margin: 70px 0;
         .blog-cards{
             display: flex;
             justify-content: center;
             align-items: center;
             column-gap: 30px;
+            margin: 40px 0;
             .card-blog-detail{
                 width: 35%; 
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -158,6 +160,264 @@
                     }
                 }
             }
+            .card-blog-detail-text{
+                width: 35%; 
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                transition: all 0.4s;
+                padding: 40px 0;
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                }
+                .text-blog-news-h1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 42px 0;
+                    .blog-news-p{
+                        font-size: 24px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        font-style: italic;
+                        color: #121214;
+                        border-left: 11px solid #00e5b0;
+                        padding: 0 30px;
+                    }
+                    .card-news-h6{
+                        font-size: 16px;
+                        color: #121214;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        padding-top: 30px;
+                    }
+                    .card-news-p-2{
+                        font-size: 14px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        color: #898e9a;   
+                        padding-bottom: 30px;             
+                    }
+                }
+                .post-business-heading{
+                    padding: 15px;
+                    border-bottom: 1px solid #d6dce5;
+                    .post-h5-2{
+                        font-size: 16px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 200;
+                        font-style: italic;
+                        a{
+                            text-decoration: none;
+                            color: #898e9a;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .business-post-img{
+                    .h5-post-2{
+                        font-size: 18px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        transition: all 0.4s;
+                        padding: 10px 20px;
+                        a{
+                            text-decoration: none;
+                            color: #121214;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .post-p-2{
+                        font-size: 16px;
+                        color: #121214;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        padding: 0 20px;
+                        padding-top: 10px;
+                        padding-bottom: 50px;
+                    }
+                    .post-p-bottom{
+                        font-size: 16px;
+                        color: #121214;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        padding: 0 20px;
+                        padding-top: 10px;
+                        padding-bottom: 45px;
+                    }
+                    .post-text-2{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 15px 40px;
+                        .post-h6-2{
+                            font-size: 13px;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            font-weight: 400;
+                            color: #898e9a;
+                        }
+                        .icon-and-span-2{
+                            display: flex;
+                            column-gap: 10px;
+                            color: #898e9a;
+                            font-size: 13px;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            font-weight: 200;
+                            font-style: italic;
+                            .post-span-2{
+                                color: #898e9a;
+                                a{
+                                    text-decoration: none;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                            .post-icon-2{
+                                font-size: 16px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
         }
+        .startup-business{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 30px;
+            .startup-card{
+                width: 70%;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                transition: all 0.4s;
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                }
+                .post-heading{
+                    padding: 20px;
+                    border-bottom: 1px solid #d6dce5;
+                    .post-h5{
+                        font-size: 16px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 200;
+                        font-style: italic;
+                        a{
+                            text-decoration: none;
+                            color: #898e9a;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .img-text-post{
+                    .p-and-h5{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 20px 20px;
+                        .h5-post{
+                            font-size: 18px;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            font-weight: 700;
+                            transition: all 0.4s;
+                            a{
+                                text-decoration: none;
+                                color: #121214;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        .post-p{
+                            font-size: 16px;
+                            color: #121214;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            width: 45%;
+                        }
+                    }
+                    .post-img{
+                        padding: 20px 70px;
+                        border-radius: 10%;
+                        display: inline-block;
+                    }
+                    .post-text{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 15px 40px;
+                        .post-h6{
+                            font-size: 13px;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            font-weight: 400;
+                            color: #898e9a;
+                        }
+                        .icon-and-span{
+                            display: flex;
+                            column-gap: 10px;
+                            color: #898e9a;
+                            font-size: 13px;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            font-weight: 200;
+                            font-style: italic;
+                            .post-span{
+                                color: #898e9a;
+                                a{
+                                    text-decoration: none;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                            .post-icon{
+                                font-size: 16px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .business-card{
+                width: 30%;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                transition: all 0.4s;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 30px;
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                    cursor: pointer;
+                    .post-link-p{
+                        text-decoration: underline;
+                    }
+                    .post-link-h6{
+                        text-decoration: underline;
+                    }
+                }
+                .post-link-img{
+                    width: 40px;
+                    height: 40px;
+                }
+                .post-link-p{
+                    font-size: 24px;
+                    color: #121214;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 700;
+                    margin: 30px 0;
+                }
+                .post-link-h6{
+                    color: #121214;
+                    font-size: 16px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                }
+            }
+        }
+    }
+    .article-h1{
+        font-size: 36px;
+        text-align: center;
+        color: #2d2f33;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        margin: 30px 0;
     }
 }
