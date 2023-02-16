@@ -1,0 +1,163 @@
+.news-page{
+    .news-header{
+        background-color: #121214;
+        .container{
+              .back-to-home{
+                border: none;
+                background-color: #121214;
+                margin: 50px 0;
+                i{
+                    padding: 10px 5px;
+                    font-size: 8px;
+                    color: #2d2f33;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+             .news-heading-h2{
+                font-size: 24px;
+                color: #00e5b0;
+                font-family: 'IBM Plex Sans', sans-serif;
+                margin: 20px 0;
+            }
+            .news-heading-h1{
+                color: #fff;
+                font-size: 60px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 700;
+                margin-top: 40px;
+                padding-bottom: 100px;
+            }
+        }
+    }
+    .all-articles{
+        .blog-cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+            .card-blog-detail{
+                width: 35%; 
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                transition: all 0.4s;
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                }
+                .text-blog-news-h1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 42px 0;
+                    .blog-news-p{
+                        font-size: 24px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        font-style: italic;
+                        color: #121214;
+                        border-left: 11px solid #00e5b0;
+                        padding: 0 30px;
+                    }
+                    .card-news-h6{
+                        font-size: 16px;
+                        color: #121214;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        padding-top: 30px;
+                    }
+                    .card-news-p-2{
+                        font-size: 14px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        color: #898e9a;   
+                        padding-bottom: 30px;             
+                    }
+                }
+                .post-business-heading{
+                    padding: 20px;
+                    border-bottom: 1px solid #d6dce5;
+                    .post-h5-2{
+                        font-size: 16px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 200;
+                        font-style: italic;
+                        a{
+                            text-decoration: none;
+                            color: #898e9a;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .business-post-img{
+                    .h5-post-2{
+                        font-size: 18px;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-weight: 700;
+                        transition: all 0.4s;
+                        padding: 20px 20px;
+                        a{
+                            text-decoration: none;
+                            color: #121214;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .post-p-2{
+                        font-size: 16px;
+                        color: #121214;
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        padding: 0 20px;
+                        padding-top: 10px;
+                        padding-bottom: 30px;
+                    }
+                    .post-img-2{
+                        padding: 20px 35px;
+                        border-radius: 10%;
+                    }
+                    .post-text-2{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 15px 40px;
+                        .post-h6-2{
+                            font-size: 13px;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            font-weight: 400;
+                            color: #898e9a;
+                        }
+                        .icon-and-span-2{
+                            display: flex;
+                            column-gap: 10px;
+                            color: #898e9a;
+                            font-size: 13px;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            font-weight: 200;
+                            font-style: italic;
+                            .post-span-2{
+                                color: #898e9a;
+                                a{
+                                    text-decoration: none;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                            .post-icon-2{
+                                font-size: 16px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

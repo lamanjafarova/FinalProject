@@ -35,15 +35,6 @@ const HowItWorks = () => {
           </div>
         </div>
         <img src={Icon2} alt="" className='icon-2' />
-        <Button className='btn-sign-up' onClick={() => setModal2Open(true)}>Play</Button>
-        <Modal
-        centered
-        open={modal2Open}
-        onOk={() => setModal2Open(false)}
-        onCancel={() => setModal2Open(false)}
-      >
-        <iframe width="900" height="500" src="https://www.youtube.com/embed/Yt6pWLjLgBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </Modal>
         </div>
       </div>
       <div className="find-job">

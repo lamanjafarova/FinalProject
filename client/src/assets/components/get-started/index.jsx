@@ -16,7 +16,6 @@ const GetStarted = () => {
                    <FaUserTie /> Sign Up
                 </Button>
                 <Modal
-        // title="Register"
         centered
         open={modal2Open}
         onOk={() => setModal2Open(false)}
