@@ -1,0 +1,59 @@
+.submit-resume{
+    .submit-header{
+        background-color: #121214;
+        .container{
+            .back-to-home{
+                border: none;
+                background-color: #121214;
+                margin: 50px 0;
+                i{
+                    padding: 10px 5px;
+                    font-size: 8px;
+                    color: #2d2f33;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .back-to-candidate{
+                border: none;
+                background-color: #121214;
+                margin: 50px 0;
+                i{
+                    padding: 10px 5px;
+                    font-size: 8px;
+                    color: #2d2f33;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .submit-heading-h2{
+                font-size: 24px;
+                color: #00e5b0;
+                font-family: 'IBM Plex Sans', sans-serif;
+                margin: 20px 0;
+            }
+            .submit-heading-h1{
+                color: #fff;
+                font-size: 60px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 700;
+                margin-top: 40px;
+                padding-bottom: 100px;
+            }
+        }
+    }
+}

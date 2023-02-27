@@ -1,4 +1,6 @@
 import React from 'react'
+// import { useSelector, useDispatch } from "react-redux";
+// import { jobAction } from '../../../redux/action/jobAction';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -11,7 +13,16 @@ import CardCandidate from '../../components/card-candidate';
 import GetStarted from '../../components/get-started';
 import BlogNews from '../../components/blog-news';
 import "./index.scss"
+import { useEffect } from 'react';
+import LogIn from '../../components/log-in';
+// import LoadingComp from '../../components/loading';
 const HomePage = () => {
+  // const getData = useSelector((state) => state.jobReducer);
+  // const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(jobAction());
+  // }, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -84,6 +95,32 @@ const HomePage = () => {
               </select>
               <button className='search-btn'>Search</button>
           </div>
+
+
+        {/* {getData.loading ? (
+          <LoadingComp />
+        ) : (
+          <div className='cards'>
+            {getData.data.map((e) => {
+              return (
+                <div className="card">
+                  <div className="card-head">
+                    <h4 className='card-name'>{e?.name}</h4>
+                    <p className='card-address'>{e?.address}</p>
+                  </div>
+                    <div className="card-img">
+                        <img src={e?.company} alt="" />
+                    </div>
+                    <div className="category-time">
+                      <p>{e?.categories}</p>
+                      <p>{e?.time}</p>
+                    </div>
+                </div>
+              )
+            })}
+          </div>
+        )} */}
+          ...
       </div>
       <div className="specialisms-jobs">
         <div className="text-specialisms">
@@ -94,16 +131,6 @@ const HomePage = () => {
           <p className='p-text-specialisms'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
           </div>
         </div>
-
-        {/* <div className="categories">
-          <div className="categories-cards">
-            <div className="icon-and-heading">
-            <i class="fa-solid fa-hospital"></i>
-            <h3>Healtcare</h3>
-            </div>
-            <button>369 open positions</button>
-          </div>
-        </div> */}
       </div>
       </div>
       <div className="app-puzzler">
@@ -114,6 +141,7 @@ const HomePage = () => {
       </div>
       <div className="get-started">
         <GetStarted />
+        <LogIn />
       </div>
       <div className="blog-news">
         <BlogNews />

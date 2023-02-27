@@ -246,7 +246,13 @@
                 }
             }
         }
-      }
+        .cards{
+            .card{
+                width: 100%;
+                border: 1px solid black;
+            }
+        }
+    }
       .specialisms-jobs{
         margin: 60px 0;
         .text-specialisms{
