@@ -15,6 +15,7 @@ import BlogNews from '../../components/blog-news';
 import "./index.scss"
 import { useEffect } from 'react';
 import LogIn from '../../components/log-in';
+import { Link } from 'react-router-dom';
 // import LoadingComp from '../../components/loading';
 const HomePage = () => {
   // const getData = useSelector((state) => state.jobReducer);
@@ -40,7 +41,7 @@ const HomePage = () => {
             <div className="slider-text">
               <h1 className='h1-slider'>Get your  dream job</h1>
               <h3 className='h3-slider'>We have <span className='span-slider'>69.368</span> great job <br /> offers you deserve!</h3>
-              <button className='btn-slider-1'>How it works</button>
+              <button className='btn-slider-1'><Link to={"/how-it-works"}>How it works</Link></button>
               <button className='btn-slider-2'>About Us <RxCaretRight /></button>
             </div>
             <img src={Team_01} alt="" className='slider-img'/>
@@ -51,7 +52,7 @@ const HomePage = () => {
           <img src={Team_03} alt="" className='slider-img-2'/>
               <div className="slider-text-2">
                 <h1 className='slider-h1-2'>Your dream job <br /> just a click <br /> away</h1>
-                <button className='btn-slider-start'>Get Started Now</button>
+                <button className='btn-slider-start'><a href="#get-started">Get Started Now</a></button>
                 <button className='btn-slider-detail'>Details <RxCaretRight /></button>
               </div>
             </div>
@@ -139,7 +140,7 @@ const HomePage = () => {
       <div className="card-candidates">
         <CardCandidate />
       </div>
-      <div className="get-started">
+      <div id="get-started">
         <GetStarted />
         <LogIn />
       </div>

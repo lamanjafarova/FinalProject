@@ -1,14 +1,17 @@
 import React from 'react'
-import { Button, message, Modal } from 'antd';
+import { Button, Modal } from 'antd';
 import { useState } from 'react';
 import { FaUserTie } from "react-icons/fa"
 import "./index.scss";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { registerUser } from '../../../apiColls/user';
 import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import { setUser } from '../../../redux/userSlice/userSlice';
 
 const GetStarted = () => {
+  const user = useSelector((state) => state.users)
+ const dispatch = useDispatch()
   const formik = useFormik({
     initialValues: {
       firstName: '',
@@ -25,24 +28,18 @@ const GetStarted = () => {
       email: Yup.string().email('Invalid email address').required('Required'),
     }),
     onSubmit: async (values) => {
-      // try {
-      //   const response = await registerUser(values)
-      //   if(response.success){
-      //     message.success(response.message)
-      //   }
-      //   else{
-      //     message.error(response.message)
-      //   }
-      // } catch (error) {
-      //   return error
-      // }
     const response = await axios.post("http://localhost:8080/users/signup", values)
-    localStorage.setItem("token", response.data)
+    // console.log(response.data)
+    // localStorage.setItem("token", JSON.stringify(response.data))
+    dispatch(setUser(response.data.result))
     },
   });
     const [modal2Open, setModal2Open] = useState(false);
   return (
     <div className='get-started-page'>
+      {
+        console.log(user)
+      }
         <div className="container">
             <div className="get-started-text">
                 <h1 className='started-h1'>Get to start the <br /> Puzzler right <br /> now!</h1>
@@ -57,35 +54,27 @@ const GetStarted = () => {
         onCancel={() => setModal2Open(false)}
       >
         <div className="register">
-            <h2 className='register-h2'>Register</h2>
-            <form onSubmit={formik.handleSubmit}>
-       <label htmlFor="firstName">First Name</label>
-       <input
+          <h2 className='register-h2'>Sign Up</h2>
+          <form onSubmit={formik.handleSubmit}>
+          <div className="first-name">
+          <label htmlFor="firstName" className='first'>First Name *</label>
+        <input
          id="firstName"
          name="firstName"
          type="text"
          onChange={formik.handleChange}
          onBlur={formik.handleBlur}
          value={formik.values.firstName}
+         className='input'
        />
+          </div>
        {formik.touched.firstName && formik.errors.firstName ? (
          <div>{formik.errors.firstName}</div>
        ) : null}
  
-       <label htmlFor="password">Password</label>
-       <input
-         id="password"
-         name="password"
-         type="password"
-         onChange={formik.handleChange}
-         onBlur={formik.handleBlur}
-         value={formik.values.password}
-       />
-       {formik.touched.password && formik.errors.password ? (
-         <div>{formik.errors.password}</div>
-       ) : null}
- 
-       <label htmlFor="email">Email Address</label>
+
+      <div className="last-name">
+       <label htmlFor="email" className='last'>Email Address *</label>
        <input
          id="email"
          name="email"
@@ -93,12 +82,30 @@ const GetStarted = () => {
          onChange={formik.handleChange}
          onBlur={formik.handleBlur}
          value={formik.values.email}
+         className='input'
        />
+       </div>
        {formik.touched.email && formik.errors.email ? (
          <div>{formik.errors.email}</div>
        ) : null}
- 
-       <button type="submit">Submit</button>
+      <div className="password">
+      <label htmlFor="password" className='pswrd'>Password *</label>
+       <input
+         id="password"
+         name="password"
+         type="password"
+         onChange={formik.handleChange}
+         onBlur={formik.handleBlur}
+         value={formik.values.password}
+         className='input'
+       />
+      </div>
+       {formik.touched.password && formik.errors.password ? (
+         <div>{formik.errors.password}</div>
+       ) : null}
+       <div className="btn-group">
+       <button type="submit" className='create-btn'>Create an Account</button>
+       </div>
      </form>
         </div>
       </Modal>
