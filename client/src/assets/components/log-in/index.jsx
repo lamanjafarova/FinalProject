@@ -40,7 +40,8 @@ const LogIn = () => {
                 <div className="register">
             <h2 className='register-h2'>Register</h2>
             <form onSubmit={formik.handleSubmit}>
-       <label htmlFor="email">Email Address</label>
+     <div className="last-name">
+     <label htmlFor="email" className='last'>Email Address</label>
        <input
          id="email"
          name="email"
@@ -48,13 +49,16 @@ const LogIn = () => {
          onChange={formik.handleChange}
          onBlur={formik.handleBlur}
          value={formik.values.email}
+         className='input'
        />
+     </div>
        {formik.touched.email && formik.errors.email ? (
          <div>{formik.errors.email}</div>
        ) : null}
 
 
-        <label htmlFor="password">Password</label>
+       <div className="password">
+       <label htmlFor="password" className='pswrd'>Password</label>
         <input
          id="password"
          name="password"
@@ -62,7 +66,9 @@ const LogIn = () => {
          onChange={formik.handleChange}
          onBlur={formik.handleBlur}
          value={formik.values.password}
+         className='input'
        />
+       </div>
        {formik.touched.password && formik.errors.password ? (
          <div>{formik.errors.password}</div>
        ) : null}

@@ -34,14 +34,12 @@ const Header = () => {
   });
   
   const [modal2Open, setModal2Open] = useState(false);
-  const [modal3Open, setModal3Open] = useState(false);
   const [toggle, setToggle] = useState(true);
   const [open, setOpen] = useState(false)
 
   const handletoggle = () => {
     setToggle(!toggle);
   };
-  // const { user } = useSelector((state) => state.users)
   return (
     <div id="header">
       <div className="main-header">
@@ -57,7 +55,7 @@ const Header = () => {
                   <NavLink to={"/"}>Home</NavLink>
                 </li>
                 <li>
-                  {user? user.user.email : "Salam" }
+                  {user.user == null ? "":  user.user.email }
                 </li>
                 <li>
                   <NavLink to={"/how-it-works"}>How it works</NavLink>
@@ -170,7 +168,7 @@ const Header = () => {
      </form>
         </div>
       </Modal>
-      <Button className="log-in" onClick={() => setModal3Open(true)}>Log In</Button>
+      <Button className="log-in" onClick={() => setOpen(!open)}>Log In</Button>
             </div>
             <div className="select-language">
               <select name="Ua" id="" className="lng-slct">
@@ -193,7 +191,12 @@ const Header = () => {
             </div>
           </div>
         </div>
-            {/* <LogIn /> */}
+        {
+          open &&   <div className="log_in">
+              <LogIn />
+          </div>
+        }
+        
       </div>
     </div>
   );
