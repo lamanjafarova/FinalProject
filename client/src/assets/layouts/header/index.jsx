@@ -30,6 +30,7 @@ const Header = () => {
     onSubmit: async (values) => {
     const response = await axios.post("http://localhost:8080/users/signup", values)
     localStorage.setItem("token", response.data)
+    setModal2Open(false)
     },
   });
   

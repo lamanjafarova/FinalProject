@@ -1,5 +1,5 @@
 import React from 'react'
-import {  NavLink } from 'react-router-dom';
+import {  Link, NavLink } from 'react-router-dom';
 import Post1 from "../../images/post1.jpg";
 import Post2 from "../../images/post2.jpg";
 import { RiMessage2Fill } from "react-icons/ri"
@@ -56,7 +56,7 @@ const BlogNews = () => {
                 </div>
             </div>
             <div className="news-btn">
-                <button className='btn-news'>All News</button>
+                <button className='btn-news'><Link to={"/news-page"}>All News</Link></button>
             </div>
         </div>
     </div>

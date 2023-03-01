@@ -1,6 +1,6 @@
 import React from 'react'
-// import { useSelector, useDispatch } from "react-redux";
-// import { jobAction } from '../../../redux/action/jobAction';
+import { useSelector, useDispatch } from "react-redux";
+import { getData } from '../../../redux/userSlice/jobSlice';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -12,18 +12,18 @@ import AppPuzzler from '../../components/app';
 import CardCandidate from '../../components/card-candidate';
 import GetStarted from '../../components/get-started';
 import BlogNews from '../../components/blog-news';
+import LoadingComp from '../../components/loading';
 import "./index.scss"
 import { useEffect } from 'react';
 import LogIn from '../../components/log-in';
 import { Link } from 'react-router-dom';
-// import LoadingComp from '../../components/loading';
 const HomePage = () => {
-  // const getData = useSelector((state) => state.jobReducer);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const jobs = useSelector((state) => state.jobs)
 
-  // useEffect(() => {
-  //   dispatch(jobAction());
-  // }, []);
+  useEffect(() => {
+    dispatch(getData(""));
+  }, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -98,29 +98,31 @@ const HomePage = () => {
           </div>
 
 
-        {/* {getData.loading ? (
+        {jobs.loading ? (
           <LoadingComp />
         ) : (
           <div className='cards'>
-            {getData.data.map((e) => {
+            {jobs.data?.map((element) => {
               return (
                 <div className="card">
+                  <div className="card-text-img">
                   <div className="card-head">
-                    <h4 className='card-name'>{e?.name}</h4>
-                    <p className='card-address'>{e?.address}</p>
+                    <h4 className='card-name'>{element?.name}</h4>
+                    <p className='card-address'>{element?.address}</p>
                   </div>
                     <div className="card-img">
-                        <img src={e?.company} alt="" />
+                        <img src={element?.company} alt="" />
                     </div>
+                  </div>
                     <div className="category-time">
-                      <p>{e?.categories}</p>
-                      <p>{e?.time}</p>
+                      <p className='category-p'>{element?.categories}</p>
+                      <p className='time-p'>{element?.time}</p>
                     </div>
                 </div>
               )
             })}
           </div>
-        )} */}
+        )}
           ...
       </div>
       <div className="specialisms-jobs">
@@ -142,7 +144,7 @@ const HomePage = () => {
       </div>
       <div id="get-started">
         <GetStarted />
-        <LogIn />
+        {/* <LogIn /> */}
       </div>
       <div className="blog-news">
         <BlogNews />
